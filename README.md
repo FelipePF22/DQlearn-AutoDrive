@@ -4,8 +4,8 @@ Este repositório foi desenvolvido como parte da entrega do **Projeto 1 da disci
 
 ## 🎯 Objetivo
 
-Este projeto tem como objetivo desenvolver um sistema de navegação autônoma para um robô movel DC, desenvolvido pelo **Laboratório de Robótica e Sistemas Inteligentes da Universidade Federal de São Carlos** por meio da integração de técnicas de aprendizado por reforço (Q-learning) e percepção baseada em Fast LiDAR. 
-A proposta consiste em treinar um agente em um ambiente simulado, controlado e simplificado, utilizando dados discretizados sensoriais do modole simulado LiDAR Velodyne HDL-32E,desenvolvido por **X**, disponivel em: , bem como neste repositório na pasta velodyne simulator. Esse sensor, será resposavel pela identificação dos obstaculos e por consequência na tomada de decisão em tempo real.
+Este projeto tem como objetivo desenvolver um sistema de navegação autônoma para um robô movel DC, desenvolvido pelo **Laboratório de Robótica e Sistemas Inteligentes da Universidade Federal de São Carlos**( Autora:**Kelen Teixeira Vivaldini** disponível em:**https://github.com/vivaldini/dcrobot** ) por meio da integração de técnicas de aprendizado por reforço (Q-learning) e percepção baseada em Fast LiDAR. 
+A proposta consiste em treinar um agente em um ambiente simulado, controlado e simplificado, utilizando dados discretizados sensoriais do modole simulado LiDAR Velodyne HDL-32E,desenvolvido por **Lovro Marković**, disponivel em:**https://github.com/lmark1/velodyne_simulator** , bem como neste repositório na pasta velodyne simulator. Esse sensor, será resposavel pela identificação dos obstaculos e por consequência na tomada de decisão em tempo real.
 Ao final, como trabalho futuro busca-se avaliar a capacidade do agente de generalizar o comportamento aprendido para cenários distintos, mesmo diante de incertezas e mudanças no ambiente.
 
 ---
