@@ -1,0 +1,10 @@
+<launch>
+    <!-- Lança o mundo simulado -->
+    <include file="$(find mobile_rob_dev_sim)/launch/teste.launch" />
+
+    <!-- Nó do Fast LiDAR -->
+    <node pkg="fast_lidar" type="fast_lidar_node.py" name="fast_lidar_node" output="screen" />
+
+    <!-- Nó de controle por Q-Learning -->
+    <node pkg="q_learning_control" type="q_learning_node.py" name="q_learning_node" output="screen" />
+</launch>

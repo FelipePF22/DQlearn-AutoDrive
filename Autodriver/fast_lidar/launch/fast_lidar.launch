@@ -1,0 +1,3 @@
+<launch>
+  <node name="fast_lidar_node" pkg="fast_lidar" type="fast_lidar_node.py" output="screen"/>
+</launch>
