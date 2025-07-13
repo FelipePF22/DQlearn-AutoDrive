@@ -1,47 +1,64 @@
-# 🤖 Navegação Autônoma com Q-Learning e Fast LiDAR
+# 🤖 Projeto de Aprendizado por Reforço Profundo
 
-Este repositório foi desenvolvido como parte da entrega do **Projeto 1 da disciplina de Robôs Móveis Autônomos**, pelos alunos **Felipe Pereira Furlaneto** e **Marcos Vinicios dos Santos**.
+Este repositório foi desenvolvido como parte da entrega do **Projeto 2 da disciplina de Robôs Móveis Autônomos**, pelos alunos **Felipe Pereira Furlaneto** e **Marcos Vinicios dos Santos**.
 
-## 🎯 Objetivo
 
-Este projeto tem como objetivo desenvolver um sistema de navegação autônoma para um robô movel DC, desenvolvido pelo **Laboratório de Robótica e Sistemas Inteligentes da Universidade Federal de São Carlos**( Autora:**Kelen Teixeira Vivaldini** disponível em:**https://github.com/vivaldini/dcrobot** ) por meio da integração de técnicas de aprendizado por reforço (Q-learning) e percepção baseada em Fast LiDAR. 
-A proposta consiste em treinar um agente em um ambiente simulado, controlado e simplificado, utilizando dados discretizados sensoriais do modole simulado LiDAR Velodyne HDL-32E,desenvolvido por **Lovro Marković**, disponivel em:**https://github.com/lmark1/velodyne_simulator** , bem como neste repositório na pasta velodyne simulator. Esse sensor, será resposavel pela identificação dos obstaculos e por consequência na tomada de decisão em tempo real.
-Ao final, como trabalho futuro busca-se avaliar a capacidade do agente de generalizar o comportamento aprendido para cenários distintos, mesmo diante de incertezas e mudanças no ambiente.
+## 📌 Descrição do Projeto
+
+Este repositório apresenta um estudo sobre Aprendizagem por Reforço Profundo (Deep Reinforcement Learning – DRL), com ênfase na aplicação do algoritmo Deep Q-Network (DQN) em um cenário de navegação autônoma. A aprendizagem por reforço profundo permite que agentes tomem decisões baseadas em interações com o ambiente, utilizando redes neurais profundas para aproximar funções de valor e lidar com espaços de estados de alta dimensionalidade.
+
+Um dos principais desafios em DRL está na definição adequada dos hiperparâmetros, que exercem influência direta na eficiência, estabilidade e convergência do processo de aprendizado. Dentre eles, o parâmetro epsilon, responsável por controlar o equilíbrio entre exploração (explore) e exploração do conhecimento já adquirido (exploit) na estratégia ε-greedy, possui papel central. Variações em sua taxa de decaimento ou valor inicial podem afetar de forma significativa o desempenho final do agente.
+
+O objetivo deste projeto é investigar a influência do parâmetro epsilon durante o treinamento de um agente DQN, bem como sua aplicação em uma tarefa simulada de navegação autônoma. A proposta busca contribuir para uma compreensão mais aprofundada do impacto desse hiperparâmetro no processo de aprendizado e na tomada de decisão do agente.
 
 ---
 
-## 📥 Como Baixar e Executar o Projeto
-## 1. Clonar o Repositório
-```bash
-cd seu workspace/src
-git clone https://github.com/FelipePF22/Qlearn-AutoDrive.git
-```
+## 🤖 Descrição do Robô
+O robô simulado neste projeto foi desenvolvido a partir de um modelo originalmente disponibilizado nos arquivos da disciplina de RMA 2025 (Robos Móveis Autônomos). Esse modelo foi exportado do SolidWorks para o formato URDF e adaptado para testes em ambientes virtuais no simulador Gazebo. Trata-se de uma plataforma com base circular e duas rodas laterais acionadas por um sistema de locomoção diferencial.
+
+A estrutura do robô inclui ainda um LIDAR 3D Velodyne HDL-32E, com 32 feixes de laser e resolução configurável, ideal para mapeamento e detecção de obstáculos em 360°
+
+Essa estrutura pode ser observada abaixo:
+
+<!-- Insira aqui uma imagem do robô -->
+![Imagem do Robô](imagem/robo.png)
+
 ---
 
-## 2. Compilar os arquivos
+## 🌐 Ambiente Simulado
+O ambiente virtual utilizado nos experimentos foi desenvolvido no simulador Gazebo 11 e representa um cenário interno composto por múltiplos obstáculos e paredes delimitadoras, conforme ilustrado na imagem abaixo. A superfície principal consiste em um terreno plano com textura de gramado (ground_plane), sobre o qual foi construído um espaço com paredes verticais que formam corredores e compartimentos interligados, simulando uma planta arquitetônica simples com dimensões de 15 metros de largura por 15 metros de comprimento.
+
+Dentro do ambiente, foram posicionados obstáculos cúbicos pretos em diferentes locais, com o objetivo de aumentar a complexidade da navegação e demandar do agente autônomo habilidades de desvio e planejamento de trajetória até o ponto final, destacado pelo quadro azul. O layout foi projetado para incluir áreas estreitas, bifurcações, espaços abertos e uma zona de chegada, desafiando tanto a estratégia de exploração quanto a política de decisão aprendida pelo agente.
+
+<!-- Insira aqui uma imagem do ambiente no Gazebo -->
+![Ambiente no Gazebo](imagem/ambiente.png)
+
+---
+
+## ⚙️ Instalação e Execução
+
+### 📥 Clonando o Repositório
+
+
 ```bash
-cd
-catkin clean
+cd  seu_workspace/src
+git clone https://github.com/FelipePF22/Deep-Qlearn-AutoDrive.git
 catkin build
 source devel/setup.bash
 ```
----
-## 3. Rodar a simulação
+
+### ⚠️ Aviso: Nesse projeto o nome do workspace esta como ros_ws, portanto antes de executar os launchs verifique o código em python do respectivo launch para alterar o endereço onde será salvo os logs e a rede treinada
+
+### 🖥️ Launch files
+
+## 🔄 Treinamento do sistema: 
+
 ```bash
 roslaunch q_learning_control q_learning_sim.launch
 ```
 
-## 📷 Imagens da Simulação
-Após rodar o código de cima, as seguinte telas serão abertas
+## 🔍 Validação do treinamento: 
+```bash
+roslaunch q_learning_control q_learning_validation.launch
+```
 
-**Ambiente no Gazebo:**
-
-![Gazebo Ambiente](images/gazebo_ambiente.png)
-
-**Visualização no RViz:**
-
-![RViz Velodyne](images/rviz_velodyne.png)
----
-
-> ⚠️ Este repositório contém os **resultados preliminares da primeira parte da avaliação**
-> Dessa forma, o diretorio contem apenas o seguimento de treinamento inicial, as tecnicas de otimização de aprendizagem de maquinas, bem como a implementação da politica em um ambiente mais complexo, se destinaram para a segunda fase do projeto. 
