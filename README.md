@@ -51,7 +51,7 @@ source devel/setup.bash
 
 ---
 
-### 🖥️ Launch files
+## 🖥️ Launch files
 
 ---
 
@@ -73,5 +73,15 @@ roslaunch q_learning_control q_learning_sim.launch
 roslaunch q_learning_control q_learning_validation.launch
 ```
 ---
+
+## 🐞📍 Depuração da Trajetória
+
+O repositório ainda contêm um arquivo denominado "trajectories", nele contem todas as trajetórias salvas em .jason realizadas pelo robô durante a execução do "q_learning_sim.launch". Assim para a sua depuração:
+
+```bash
+cd seu_workspace/src/DQlearn-AutoDrive/Autodriver/q_learning_control/scripts
+python3 trajectorie.py 
+```
+Após a sua excução na pasta "caminhos" presente dentro de "trajectories" irá exibir todas as trajetórias individuais.
 
 
