@@ -80,7 +80,7 @@ O repositório também contém um diretório chamado "trajectories", no qual est
 
 ```bash
 cd seu_workspace/src/DQlearn-AutoDrive/Autodriver/q_learning_control/scripts
-python3 trajectorie.py 
+python3 plot_trajectory.py
 ```
 Após a execução do script, todas as trajetórias individuais serão exibidas na pasta "caminhos", localizada dentro do diretório "trajectories".
 
