@@ -74,14 +74,5 @@ roslaunch q_learning_control q_learning_validation.launch
 ```
 ---
 
-## 🐞📍 Depuração da Trajetória
-
-O repositório também contém um diretório chamado "trajectories", no qual estão armazenadas todas as trajetórias salvas em formato .json, geradas pelo robô durante a execução do script q_learning_sim.launch. Para realizar a depuração dessas trajetórias, utilize o seguinte comando:
-
-```bash
-cd seu_workspace/src/DQlearn-AutoDrive/Autodriver/q_learning_control/scripts
-python3 plot_trajectory.py
-```
-Após a execução do script, todas as trajetórias individuais serão exibidas na pasta "caminhos", localizada dentro do diretório "trajectories".
 
 
