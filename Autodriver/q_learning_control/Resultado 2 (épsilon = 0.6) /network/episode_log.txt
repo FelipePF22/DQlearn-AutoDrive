@@ -1,0 +1,363 @@
+REGISTRO DE EPISÓDIOS - APRENDIZADO POR REFORÇO
+=================================================
+Formato: Episódio | Resultado | Tempo (s) | Distância (m) | Pontos | Epsilon
+-------------------------------------------------
+       0 | Seguiu o caminho |   101.36 |         7.52 |  1360.00 |   0.600
+       1 | Colidiu          |    33.74 |         8.25 |   588.00 |   0.597
+       2 | Colidiu          |    25.65 |         6.52 |   393.00 |   0.594
+       3 | Seguiu o caminho |   100.99 |        11.20 |  1560.50 |   0.591
+       4 | Colidiu          |    36.96 |         9.20 |   394.00 |   0.588
+       5 | Colidiu          |    85.64 |        17.18 |  1329.00 |   0.585
+       6 | Atingiu o objetivo |    52.51 |        19.40 |  1815.00 |   0.582
+       7 | Seguiu o caminho |   100.98 |        14.95 |  1985.00 |   0.579
+       8 | Colidiu          |    76.35 |        22.01 |  1504.00 |   0.576
+       9 | Colidiu          |    66.46 |        15.59 |  1047.00 |   0.574
+      10 | Atingiu o objetivo |    63.22 |        19.90 |  1883.00 |   0.571
+      11 | Atingiu o objetivo |    78.98 |        21.03 |  1950.00 |   0.568
+      12 | Seguiu o caminho |   100.99 |        13.18 |  1520.00 |   0.565
+      13 | Seguiu o caminho |   100.99 |        12.85 |  1629.00 |   0.562
+      14 | Seguiu o caminho |   100.99 |         9.63 |  1489.00 |   0.559
+      15 | Seguiu o caminho |   100.99 |        11.10 |  1952.00 |   0.557
+      16 | Atingiu o objetivo |     3.23 |        10.04 |   206.00 |   0.554
+      17 | Colidiu          |    19.39 |         6.88 |   380.00 |   0.551
+      18 | Colidiu          |    37.57 |        11.31 |   816.00 |   0.548
+      19 | Colidiu          |    99.59 |        23.86 |  2271.00 |   0.545
+      20 | Colidiu          |    29.30 |        10.78 |   770.00 |   0.543
+      21 | Colidiu          |    34.94 |        12.28 |   869.00 |   0.540
+      22 | Colidiu          |    14.55 |         6.29 |   300.00 |   0.537
+      23 | Colidiu          |    16.97 |         6.42 |   309.00 |   0.535
+      24 | Colidiu          |    30.90 |        10.83 |   758.00 |   0.532
+      25 | Colidiu          |    23.24 |         8.66 |   403.00 |   0.529
+      26 | Seguiu o caminho |   101.00 |        15.01 |  1866.00 |   0.527
+      27 | Colidiu          |    23.03 |        16.49 |    58.50 |   0.524
+      28 | Colidiu          |    24.24 |         8.09 |   359.00 |   0.521
+      29 | Colidiu          |    28.69 |         7.18 |   460.00 |   0.519
+      30 | Seguiu o caminho |   101.00 |        14.84 |  2041.00 |   0.516
+      31 | Colidiu          |     4.04 |         4.87 |   -59.00 |   0.514
+      32 | Colidiu          |    18.79 |         6.36 |   310.00 |   0.511
+      33 | Colidiu          |    17.38 |         6.30 |   308.00 |   0.509
+      34 | Colidiu          |    14.35 |         6.22 |   344.00 |   0.506
+      35 | Colidiu          |    18.38 |         6.32 |   348.00 |   0.503
+      36 | Seguiu o caminho |   101.02 |        14.88 |  1988.00 |   0.501
+      37 | Colidiu          |    20.00 |         8.08 |    -0.50 |   0.498
+      38 | Colidiu          |    65.67 |        18.19 |  1211.00 |   0.496
+      39 | Seguiu o caminho |   101.02 |        13.69 |  2097.00 |   0.493
+      40 | Atingiu o objetivo |    55.77 |        19.57 |  1822.00 |   0.491
+      41 | Seguiu o caminho |   101.01 |        15.28 |  1886.00 |   0.489
+      42 | Colidiu          |    51.11 |        11.53 |   993.00 |   0.486
+      43 | Atingiu o objetivo |    73.73 |        23.15 |  2095.00 |   0.484
+      44 | Seguiu o caminho |   100.97 |        13.72 |  1981.00 |   0.481
+      45 | Seguiu o caminho |   100.97 |         8.02 |  1147.00 |   0.479
+      46 | Seguiu o caminho |   100.97 |        14.80 |  1611.00 |   0.476
+      47 | Seguiu o caminho |   100.97 |        13.64 |  1581.00 |   0.474
+      48 | Seguiu o caminho |   100.98 |        10.54 |  1727.00 |   0.472
+      49 | Colidiu          |    24.24 |        12.54 |   557.00 |   0.469
+      50 | Seguiu o caminho |   100.97 |        13.79 |  1545.00 |   0.467
+      51 | Seguiu o caminho |   100.98 |        14.64 |  1806.00 |   0.465
+      52 | Seguiu o caminho |   100.97 |        11.46 |  1649.00 |   0.462
+      53 | Seguiu o caminho |   100.98 |        12.70 |  1501.00 |   0.460
+      54 | Seguiu o caminho |   100.97 |        12.99 |  1853.00 |   0.458
+      55 | Seguiu o caminho |   100.97 |         5.47 |  1172.00 |   0.455
+      56 | Seguiu o caminho |   100.97 |         4.54 |  1488.00 |   0.453
+      57 | Seguiu o caminho |   100.98 |         6.14 |  1410.00 |   0.451
+      58 | Seguiu o caminho |   100.98 |        12.37 |  1791.00 |   0.449
+      59 | Colidiu          |     0.21 |         5.27 |  -100.00 |   0.446
+      60 | Seguiu o caminho |   100.97 |        13.15 |  1762.00 |   0.444
+      61 | Seguiu o caminho |   100.98 |        15.20 |  2226.00 |   0.442
+      62 | Colidiu          |    64.42 |        18.89 |   557.00 |   0.440
+      63 | Atingiu o objetivo |    47.86 |        19.28 |  1756.00 |   0.438
+      64 | Seguiu o caminho |   100.98 |        15.67 |  1959.00 |   0.435
+      65 | Seguiu o caminho |   100.98 |        13.03 |  1615.00 |   0.433
+      66 | Seguiu o caminho |   100.98 |         8.64 |  1470.00 |   0.431
+      67 | Seguiu o caminho |   100.98 |        12.00 |  1544.00 |   0.429
+      68 | Colidiu          |    24.43 |        10.96 |   703.00 |   0.427
+      69 | Atingiu o objetivo |    72.71 |        22.62 |  2303.00 |   0.425
+      70 | Seguiu o caminho |   100.98 |        14.19 |  2118.00 |   0.422
+      71 | Seguiu o caminho |   100.99 |         5.31 |  1597.00 |   0.420
+      72 | Seguiu o caminho |   100.97 |         9.86 |  1328.00 |   0.418
+      73 | Seguiu o caminho |   100.98 |         6.98 |  1595.00 |   0.416
+      74 | Atingiu o objetivo |    51.10 |        17.08 |  1050.00 |   0.414
+      75 | Atingiu o objetivo |    48.47 |        19.31 |  1808.00 |   0.412
+      76 | Atingiu o objetivo |    55.54 |        19.64 |  1749.00 |   0.410
+      77 | Seguiu o caminho |   100.99 |        16.13 |  2319.00 |   0.408
+      78 | Seguiu o caminho |   100.97 |         6.88 |  1466.00 |   0.406
+      79 | Seguiu o caminho |   100.98 |        12.88 |  1986.00 |   0.404
+      80 | Colidiu          |    38.57 |        12.64 |   902.00 |   0.402
+      81 | Seguiu o caminho |   100.97 |        16.97 |  2254.00 |   0.400
+      82 | Seguiu o caminho |   100.97 |        13.17 |  1930.00 |   0.398
+      83 | Seguiu o caminho |   100.97 |        17.35 |  1758.00 |   0.396
+      84 | Seguiu o caminho |   100.99 |        16.84 |  2330.00 |   0.394
+      85 | Atingiu o objetivo |    47.06 |        12.87 |   637.00 |   0.392
+      86 | Atingiu o objetivo |    49.48 |        19.24 |  1757.00 |   0.390
+      87 | Seguiu o caminho |   101.00 |         9.84 |  1576.00 |   0.388
+      88 | Seguiu o caminho |   101.00 |        13.78 |  1573.00 |   0.386
+      89 | Seguiu o caminho |   100.99 |        12.72 |  1738.00 |   0.384
+      90 | Seguiu o caminho |   100.99 |         5.07 |   849.00 |   0.382
+      91 | Seguiu o caminho |   101.00 |         4.42 |  1287.00 |   0.380
+      92 | Seguiu o caminho |   100.99 |         8.46 |  1761.00 |   0.378
+      93 | Seguiu o caminho |   100.99 |        10.41 |  1519.00 |   0.376
+      94 | Seguiu o caminho |   100.99 |        10.68 |  1385.00 |   0.375
+      95 | Seguiu o caminho |   100.99 |        11.65 |  1549.00 |   0.373
+      96 | Seguiu o caminho |   100.98 |        14.94 |  1967.00 |   0.371
+      97 | Colidiu          |    62.42 |        25.93 |  1777.00 |   0.369
+      98 | Seguiu o caminho |   100.98 |         7.97 |  1903.00 |   0.367
+      99 | Atingiu o objetivo |    29.09 |        15.20 |  1055.00 |   0.365
+     100 | Atingiu o objetivo |    47.27 |        19.66 |  1751.00 |   0.363
+     101 | Colidiu          |    68.07 |        23.92 |  1751.00 |   0.362
+     102 | Colidiu          |    29.30 |        12.52 |   942.00 |   0.360
+     103 | Seguiu o caminho |   101.00 |        15.06 |  2125.00 |   0.358
+     104 | Atingiu o objetivo |    44.64 |        17.00 |  1332.00 |   0.356
+     105 | Seguiu o caminho |   100.99 |        13.75 |  1835.00 |   0.354
+     106 | Seguiu o caminho |   100.99 |         6.36 |  1321.00 |   0.353
+     107 | Seguiu o caminho |   101.00 |         4.52 |  1426.00 |   0.351
+     108 | Seguiu o caminho |   100.99 |         4.42 |  1571.00 |   0.349
+     109 | Seguiu o caminho |   100.99 |        14.78 |  2207.00 |   0.347
+     110 | Colidiu          |    85.24 |        11.89 |  1408.50 |   0.346
+     111 | Seguiu o caminho |   100.99 |        16.28 |  2324.00 |   0.344
+     112 | Seguiu o caminho |   100.98 |        16.85 |  1820.00 |   0.342
+     113 | Colidiu          |     0.20 |         0.02 |  -100.00 |   0.341
+     114 | Atingiu o objetivo |    72.73 |        21.25 |  2255.00 |   0.339
+     115 | Seguiu o caminho |   101.00 |        11.01 |  2315.00 |   0.337
+     116 | Seguiu o caminho |   100.99 |        10.13 |  1170.00 |   0.335
+     117 | Colidiu          |     2.03 |         3.83 |   -91.00 |   0.334
+     118 | Atingiu o objetivo |    67.26 |        21.09 |  1841.00 |   0.332
+     119 | Atingiu o objetivo |    88.88 |        24.52 |  2514.00 |   0.330
+     120 | Seguiu o caminho |   101.01 |        15.75 |  1676.00 |   0.329
+     121 | Seguiu o caminho |   101.00 |        12.18 |  1513.00 |   0.327
+     122 | Atingiu o objetivo |    63.02 |        21.11 |  1826.00 |   0.326
+     123 | Seguiu o caminho |   101.00 |        16.12 |  2304.00 |   0.324
+     124 | Seguiu o caminho |   100.99 |        15.05 |  1425.00 |   0.322
+     125 | Seguiu o caminho |   101.00 |        14.98 |  2188.00 |   0.321
+     126 | Atingiu o objetivo |    21.82 |        12.79 |   561.00 |   0.319
+     127 | Atingiu o objetivo |    63.21 |        20.44 |  1838.00 |   0.317
+     128 | Seguiu o caminho |   100.99 |        16.94 |  2556.00 |   0.316
+     129 | Seguiu o caminho |   100.99 |         8.46 |  1311.00 |   0.314
+     130 | Atingiu o objetivo |    96.15 |        16.32 |  1535.00 |   0.313
+     131 | Atingiu o objetivo |    48.07 |        20.17 |  1692.00 |   0.311
+     132 | Atingiu o objetivo |    41.62 |        19.17 |  1731.00 |   0.310
+     133 | Seguiu o caminho |   100.99 |        18.17 |  2378.00 |   0.308
+     134 | Colidiu          |    14.14 |         6.10 |  -308.00 |   0.307
+     135 | Atingiu o objetivo |    47.27 |        19.66 |  1730.00 |   0.305
+     136 | Atingiu o objetivo |    99.80 |        28.99 |  3121.00 |   0.303
+     137 | Atingiu o objetivo |    79.59 |        23.90 |  2180.00 |   0.302
+     138 | Seguiu o caminho |   101.00 |        19.40 |  2889.00 |   0.300
+     139 | Seguiu o caminho |   101.00 |        17.70 |  1547.00 |   0.299
+     140 | Atingiu o objetivo |    41.01 |        19.24 |  1768.00 |   0.297
+     141 | Atingiu o objetivo |    89.08 |        20.54 |  2082.00 |   0.296
+     142 | Atingiu o objetivo |    42.02 |        19.78 |  1844.00 |   0.294
+     143 | Atingiu o objetivo |    74.14 |        25.69 |  2287.00 |   0.293
+     144 | Seguiu o caminho |   101.00 |        16.75 |  2567.00 |   0.292
+     145 | Atingiu o objetivo |     2.83 |        10.37 |   229.00 |   0.290
+     146 | Atingiu o objetivo |    96.16 |        26.15 |  2558.00 |   0.289
+     147 | Seguiu o caminho |   100.99 |        16.95 |  2298.00 |   0.287
+     148 | Atingiu o objetivo |    42.82 |        16.79 |   761.00 |   0.286
+     149 | Colidiu          |    84.23 |        24.56 |  1968.00 |   0.284
+     150 | Atingiu o objetivo |    53.94 |        21.93 |  1965.00 |   0.283
+     151 | Seguiu o caminho |   100.99 |        14.56 |  2073.00 |   0.281
+     152 | Atingiu o objetivo |    29.30 |        14.01 |   582.00 |   0.280
+     153 | Atingiu o objetivo |    54.74 |        20.10 |  1671.00 |   0.279
+     154 | Atingiu o objetivo |    58.18 |        22.61 |  2004.00 |   0.277
+     155 | Atingiu o objetivo |    46.25 |        19.75 |  1839.00 |   0.276
+     156 | Seguiu o caminho |   100.99 |        15.73 |  2432.00 |   0.275
+     157 | Atingiu o objetivo |    16.36 |        12.02 |   312.00 |   0.273
+     158 | Seguiu o caminho |   101.00 |        11.54 |  1777.00 |   0.272
+     159 | Seguiu o caminho |   100.99 |        14.12 |  1486.00 |   0.270
+     160 | Atingiu o objetivo |    43.83 |        19.74 |  1787.00 |   0.269
+     161 | Seguiu o caminho |   101.00 |        14.35 |  2340.00 |   0.268
+     162 | Atingiu o objetivo |     9.10 |        11.48 |   188.00 |   0.266
+     163 | Atingiu o objetivo |    48.88 |        20.42 |  1794.00 |   0.265
+     164 | Seguiu o caminho |   101.00 |        17.20 |  1947.00 |   0.264
+     165 | Seguiu o caminho |   101.00 |         8.89 |   623.00 |   0.262
+     166 | Atingiu o objetivo |   100.00 |        22.60 |  1703.00 |   0.261
+     167 | Colidiu          |    25.45 |        10.93 |   810.00 |   0.260
+     168 | Colidiu          |    89.89 |        29.70 |  1832.00 |   0.258
+     169 | Seguiu o caminho |   100.99 |        20.23 |  2446.00 |   0.257
+     170 | Colidiu          |     3.44 |        12.66 |   -85.50 |   0.256
+     171 | Seguiu o caminho |   101.00 |        16.03 |  2269.00 |   0.255
+     172 | Seguiu o caminho |   101.01 |        15.64 |  1845.00 |   0.253
+     173 | Seguiu o caminho |   101.00 |        15.16 |  1851.00 |   0.252
+     174 | Atingiu o objetivo |    25.46 |        15.23 |  1098.00 |   0.251
+     175 | Seguiu o caminho |   101.00 |        16.94 |  2115.00 |   0.250
+     176 | Atingiu o objetivo |    32.53 |        16.39 |  1094.00 |   0.248
+     177 | Seguiu o caminho |   101.00 |        21.41 |  2816.00 |   0.247
+     178 | Seguiu o caminho |   101.00 |        14.38 |  1478.00 |   0.246
+     179 | Colidiu          |    37.58 |        13.43 |   380.00 |   0.245
+     180 | Seguiu o caminho |   101.01 |         7.29 |  1426.00 |   0.243
+     181 | Seguiu o caminho |   100.99 |        10.96 |  1699.00 |   0.242
+     182 | Seguiu o caminho |   101.00 |         9.21 |  1518.00 |   0.241
+     183 | Atingiu o objetivo |    34.14 |        15.09 |  1022.00 |   0.240
+     184 | Seguiu o caminho |   100.99 |        10.71 |  2112.00 |   0.239
+     185 | Atingiu o objetivo |    31.72 |        15.58 |  1058.00 |   0.237
+     186 | Seguiu o caminho |   101.00 |        12.82 |  1373.50 |   0.236
+     187 | Colidiu          |    43.43 |        13.43 |    41.00 |   0.235
+     188 | Seguiu o caminho |   101.00 |        14.48 |  2561.00 |   0.234
+     189 | Atingiu o objetivo |    19.40 |        13.31 |   679.00 |   0.233
+     190 | Atingiu o objetivo |    99.99 |        25.23 |  2827.00 |   0.231
+     191 | Atingiu o objetivo |    40.00 |        19.15 |  1741.00 |   0.230
+     192 | Seguiu o caminho |   100.99 |        16.75 |  2127.00 |   0.229
+     193 | Seguiu o caminho |   101.00 |        19.92 |  2485.00 |   0.228
+     194 | Seguiu o caminho |   101.00 |        19.05 |  2396.00 |   0.227
+     195 | Atingiu o objetivo |    56.97 |        21.14 |  1827.00 |   0.226
+     196 | Atingiu o objetivo |    39.19 |        19.22 |  1790.00 |   0.225
+     197 | Seguiu o caminho |   100.99 |        17.06 |  1990.00 |   0.224
+     198 | Seguiu o caminho |   101.00 |         8.44 |  1930.00 |   0.222
+     199 | Seguiu o caminho |   100.99 |        13.12 |  2141.00 |   0.221
+     200 | Seguiu o caminho |   101.00 |        19.34 |  2760.00 |   0.220
+     201 | Atingiu o objetivo |    48.49 |        20.01 |  1528.00 |   0.219
+     202 | Colidiu          |    12.53 |         6.29 |   357.00 |   0.218
+     203 | Atingiu o objetivo |    36.97 |        18.94 |  1689.00 |   0.217
+     204 | Seguiu o caminho |   101.00 |        15.50 |  2310.00 |   0.216
+     205 | Atingiu o objetivo |    32.33 |        16.95 |  1351.00 |   0.215
+     206 | Atingiu o objetivo |    42.83 |        19.59 |  1811.00 |   0.214
+     207 | Seguiu o caminho |   100.99 |        21.09 |  3006.00 |   0.213
+     208 | Seguiu o caminho |   101.00 |        15.79 |  1344.00 |   0.212
+     209 | Seguiu o caminho |   101.00 |        19.22 |  2474.00 |   0.210
+     210 | Colidiu          |    21.62 |        15.71 |   695.00 |   0.209
+     211 | Seguiu o caminho |   101.00 |        18.35 |  2673.00 |   0.208
+     212 | Atingiu o objetivo |     3.64 |        11.18 |   198.00 |   0.207
+     213 | Seguiu o caminho |   100.99 |        17.72 |  2591.00 |   0.206
+     214 | Atingiu o objetivo |    12.93 |        11.82 |   518.00 |   0.205
+     215 | Colidiu          |    30.91 |        12.63 |   878.00 |   0.204
+     216 | Seguiu o caminho |   101.00 |        20.94 |  2455.00 |   0.203
+     217 | Seguiu o caminho |   101.00 |        15.83 |  1815.00 |   0.202
+     218 | Seguiu o caminho |   101.00 |        10.66 |  1590.00 |   0.201
+     219 | Atingiu o objetivo |    33.74 |        17.70 |  1622.00 |   0.200
+     220 | Seguiu o caminho |   101.01 |        15.58 |  2334.00 |   0.199
+     221 | Colidiu          |    57.17 |         7.49 |   111.00 |   0.198
+     222 | Atingiu o objetivo |    61.81 |        24.57 |  2291.00 |   0.197
+     223 | Atingiu o objetivo |    43.64 |        19.89 |  1771.00 |   0.196
+     224 | Atingiu o objetivo |    58.79 |        23.92 |  2254.00 |   0.195
+     225 | Atingiu o objetivo |    39.59 |        19.01 |  1773.00 |   0.194
+     226 | Atingiu o objetivo |    56.17 |        22.71 |  2049.00 |   0.193
+     227 | Atingiu o objetivo |    74.14 |        24.86 |  2274.00 |   0.192
+     228 | Seguiu o caminho |   101.00 |        15.75 |  2234.00 |   0.191
+     229 | Colidiu          |     7.68 |         6.29 |    10.00 |   0.190
+     230 | Seguiu o caminho |   101.01 |        17.51 |  2607.00 |   0.189
+     231 | Seguiu o caminho |   101.01 |         2.46 |  -224.00 |   0.188
+     232 | Seguiu o caminho |   101.00 |        12.77 |  1313.00 |   0.188
+     233 | Seguiu o caminho |   101.00 |        20.32 |  2177.00 |   0.187
+     234 | Atingiu o objetivo |    58.99 |        18.41 |  1618.00 |   0.186
+     235 | Seguiu o caminho |   101.00 |        16.03 |  2096.00 |   0.185
+     236 | Atingiu o objetivo |    49.09 |        16.87 |   630.00 |   0.184
+     237 | Seguiu o caminho |   101.00 |        18.02 |  2115.00 |   0.183
+     238 | Seguiu o caminho |   101.00 |        16.13 |  2158.00 |   0.182
+     239 | Seguiu o caminho |   101.00 |        17.82 |  1902.00 |   0.181
+     240 | Atingiu o objetivo |    62.42 |        24.29 |  2164.00 |   0.180
+     241 | Atingiu o objetivo |    48.08 |        21.83 |  2014.00 |   0.179
+     242 | Atingiu o objetivo |    41.82 |        19.49 |  1805.00 |   0.178
+     243 | Atingiu o objetivo |    41.81 |        19.75 |  1857.00 |   0.177
+     244 | Atingiu o objetivo |    37.58 |        19.11 |  1777.00 |   0.177
+     245 | Seguiu o caminho |   100.99 |        14.60 |  1996.00 |   0.176
+     246 | Seguiu o caminho |   101.01 |        14.00 |  1103.00 |   0.175
+     247 | Seguiu o caminho |   101.01 |         7.89 |   953.00 |   0.174
+     248 | Seguiu o caminho |   101.01 |         3.19 |   626.00 |   0.173
+     249 | Atingiu o objetivo |    82.83 |        24.96 |  2425.00 |   0.172
+     250 | Seguiu o caminho |   101.00 |        14.13 |  2331.00 |   0.171
+     251 | Atingiu o objetivo |     7.08 |        11.57 |   251.00 |   0.171
+     252 | Atingiu o objetivo |    38.18 |        19.27 |  1718.00 |   0.170
+     253 | Atingiu o objetivo |    45.66 |        19.62 |  1747.00 |   0.169
+     254 | Atingiu o objetivo |    37.17 |        19.05 |  1779.00 |   0.168
+     255 | Atingiu o objetivo |    76.36 |        23.99 |  2323.00 |   0.167
+     256 | Atingiu o objetivo |    39.60 |        19.31 |  1697.00 |   0.166
+     257 | Atingiu o objetivo |    88.08 |        25.52 |  2398.00 |   0.165
+     258 | Atingiu o objetivo |    39.39 |        19.32 |  1809.00 |   0.165
+     259 | Atingiu o objetivo |    48.89 |        21.70 |  2038.00 |   0.164
+     260 | Atingiu o objetivo |    40.60 |        19.67 |  1873.00 |   0.163
+     261 | Colidiu          |    27.88 |        12.89 |   942.00 |   0.162
+     262 | Atingiu o objetivo |    39.40 |        19.89 |  1792.00 |   0.161
+     263 | Atingiu o objetivo |    37.17 |        19.10 |  1752.00 |   0.161
+     264 | Atingiu o objetivo |    50.71 |        19.37 |  1850.00 |   0.160
+     265 | Seguiu o caminho |   101.00 |        20.30 |  2920.00 |   0.159
+     266 | Seguiu o caminho |   101.00 |         4.00 |  -513.00 |   0.158
+     267 | Colidiu          |    11.72 |         9.19 |  -327.00 |   0.157
+     268 | Seguiu o caminho |   101.01 |        17.57 |  2143.00 |   0.157
+     269 | Seguiu o caminho |   101.01 |        17.65 |  1517.00 |   0.156
+     270 | Atingiu o objetivo |    21.02 |        15.14 |   917.00 |   0.155
+     271 | Atingiu o objetivo |    45.66 |        20.22 |  1732.00 |   0.154
+     272 | Atingiu o objetivo |    40.20 |        19.91 |  1870.00 |   0.153
+     273 | Atingiu o objetivo |    37.57 |        19.59 |  1816.00 |   0.153
+     274 | Seguiu o caminho |   101.00 |        20.50 |  1807.00 |   0.152
+     275 | Atingiu o objetivo |    59.39 |        21.98 |  1716.00 |   0.151
+     276 | Atingiu o objetivo |    65.25 |        24.09 |  2078.00 |   0.150
+     277 | Atingiu o objetivo |    64.65 |        24.10 |  2099.00 |   0.150
+     278 | Atingiu o objetivo |    37.98 |        19.34 |  1802.00 |   0.149
+     279 | Seguiu o caminho |   101.00 |        21.05 |  2639.00 |   0.148
+     280 | Seguiu o caminho |   101.00 |        19.26 |  2096.00 |   0.147
+     281 | Seguiu o caminho |   101.00 |        13.69 |  2031.00 |   0.147
+     282 | Seguiu o caminho |   101.01 |        11.07 |  1763.00 |   0.146
+     283 | Seguiu o caminho |   101.01 |        17.09 |  2533.00 |   0.145
+     284 | Seguiu o caminho |   101.00 |        18.43 |  2611.00 |   0.145
+     285 | Seguiu o caminho |   101.00 |        16.73 |  2451.00 |   0.144
+     286 | Seguiu o caminho |   101.01 |         2.12 |   902.00 |   0.143
+     287 | Seguiu o caminho |   101.01 |         8.09 |  1462.00 |   0.142
+     288 | Seguiu o caminho |   101.00 |         1.93 |   580.00 |   0.142
+     289 | Seguiu o caminho |   101.01 |        16.19 |  1624.00 |   0.141
+     290 | Seguiu o caminho |   101.00 |        15.63 |  1934.00 |   0.140
+     291 | Seguiu o caminho |   101.01 |         4.70 |   824.00 |   0.140
+     292 | Seguiu o caminho |   101.00 |         5.93 |   811.00 |   0.139
+     293 | Seguiu o caminho |   101.01 |        12.01 |  1856.00 |   0.138
+     294 | Seguiu o caminho |   101.01 |        16.37 |  2203.00 |   0.137
+     295 | Seguiu o caminho |   101.01 |        10.56 |  1618.00 |   0.137
+     296 | Seguiu o caminho |   101.00 |         5.19 |   987.00 |   0.136
+     297 | Seguiu o caminho |   101.00 |         7.33 |  1275.00 |   0.135
+     298 | Seguiu o caminho |   101.01 |        15.70 |  2197.00 |   0.135
+     299 | Seguiu o caminho |   101.00 |        16.05 |  2155.00 |   0.134
+     300 | Seguiu o caminho |   101.01 |         2.39 |   731.00 |   0.133
+     301 | Colidiu          |    51.12 |        15.24 |   814.00 |   0.133
+     302 | Colidiu          |    72.52 |        18.65 |  1768.00 |   0.132
+     303 | Seguiu o caminho |   101.01 |        19.78 |  2552.00 |   0.131
+     304 | Seguiu o caminho |   101.00 |        18.45 |  2402.00 |   0.131
+     305 | Colidiu          |    24.65 |         6.73 |   489.00 |   0.130
+     306 | Seguiu o caminho |   100.99 |        19.34 |  2619.00 |   0.129
+     307 | Seguiu o caminho |   101.01 |        17.23 |  2345.00 |   0.129
+     308 | Seguiu o caminho |   101.01 |        10.68 |  2052.00 |   0.128
+     309 | Colidiu          |    94.15 |        17.90 |  1613.00 |   0.127
+     310 | Colidiu          |    76.16 |        24.63 |  2198.00 |   0.127
+     311 | Colidiu          |    60.41 |         7.98 |  1189.00 |   0.126
+     312 | Seguiu o caminho |   101.00 |        18.68 |  2735.00 |   0.126
+     313 | Seguiu o caminho |   101.00 |         9.00 |  1459.00 |   0.125
+     314 | Atingiu o objetivo |    32.93 |        16.46 |   568.00 |   0.124
+     315 | Seguiu o caminho |   101.00 |        14.47 |  2538.00 |   0.124
+     316 | Colidiu          |    35.15 |        13.29 |    69.00 |   0.123
+     317 | Atingiu o objetivo |    72.32 |        24.36 |  2110.00 |   0.122
+     318 | Atingiu o objetivo |    69.50 |        19.88 |  1927.00 |   0.122
+     319 | Seguiu o caminho |   101.01 |        12.48 |  2120.00 |   0.121
+     320 | Seguiu o caminho |   101.02 |        17.93 |  2804.00 |   0.121
+     321 | Seguiu o caminho |   101.01 |        15.58 |  2228.00 |   0.120
+     322 | Colidiu          |    61.01 |        16.29 |  1181.00 |   0.119
+     323 | Seguiu o caminho |   101.01 |        11.42 |  2714.00 |   0.119
+     324 | Atingiu o objetivo |    75.76 |        12.51 |  1439.00 |   0.118
+     325 | Atingiu o objetivo |    47.88 |        21.24 |  1933.00 |   0.118
+     326 | Seguiu o caminho |   101.00 |        21.51 |  2670.00 |   0.117
+     327 | Colidiu          |    26.87 |        15.71 |   158.00 |   0.116
+     328 | Colidiu          |    77.37 |        20.74 |  1961.50 |   0.116
+     329 | Colidiu          |    11.32 |         6.37 |   402.00 |   0.115
+     330 | Colidiu          |    10.91 |         6.36 |   407.00 |   0.115
+     331 | Atingiu o objetivo |    39.20 |        19.79 |  1855.00 |   0.114
+     332 | Atingiu o objetivo |    81.21 |        25.21 |  2473.00 |   0.114
+     333 | Colidiu          |    64.04 |        23.42 |  1602.00 |   0.113
+     334 | Atingiu o objetivo |    52.74 |        21.61 |  2001.00 |   0.112
+     335 | Seguiu o caminho |   101.00 |        14.97 |  2237.00 |   0.112
+     336 | Colidiu          |    33.94 |        10.06 |   508.50 |   0.111
+     337 | Atingiu o objetivo |    46.26 |        21.50 |  2006.00 |   0.111
+     338 | Atingiu o objetivo |    47.08 |        20.53 |  1840.00 |   0.110
+     339 | Atingiu o objetivo |    37.17 |        19.30 |  1804.00 |   0.110
+     340 | Atingiu o objetivo |    89.50 |        24.86 |  2311.00 |   0.109
+     341 | Seguiu o caminho |   101.01 |        13.13 |  2441.00 |   0.109
+     342 | Atingiu o objetivo |    50.70 |        14.20 |   886.00 |   0.108
+     343 | Atingiu o objetivo |    84.85 |        27.26 |  2341.00 |   0.108
+     344 | Atingiu o objetivo |    60.01 |        22.54 |  1757.00 |   0.107
+     345 | Atingiu o objetivo |    69.70 |        25.02 |  2585.00 |   0.106
+     346 | Atingiu o objetivo |    63.64 |        21.93 |  2068.00 |   0.106
+     347 | Atingiu o objetivo |    43.24 |        21.08 |  1947.00 |   0.105
+     348 | Atingiu o objetivo |    70.10 |        22.99 |  2425.00 |   0.105
+     349 | Atingiu o objetivo |    52.32 |        21.65 |  2048.00 |   0.104
+     350 | Atingiu o objetivo |    55.56 |        22.17 |  2107.00 |   0.104
+     351 | Atingiu o objetivo |    77.98 |        23.90 |  2484.00 |   0.103
+     352 | Atingiu o objetivo |    46.87 |        21.48 |  2003.00 |   0.103
+     353 | Atingiu o objetivo |    40.81 |        20.39 |  1910.00 |   0.102
+     354 | Atingiu o objetivo |    83.44 |        25.69 |  2195.00 |   0.102
+     355 | Atingiu o objetivo |    42.83 |        20.45 |  1909.00 |   0.101
+     356 | Seguiu o caminho |   101.01 |         4.51 |   994.00 |   0.101
+     357 | Seguiu o caminho |   101.01 |         2.00 |   532.00 |   0.100
+     358 | Colidiu          |    56.57 |        14.37 |   910.00 |   0.100
