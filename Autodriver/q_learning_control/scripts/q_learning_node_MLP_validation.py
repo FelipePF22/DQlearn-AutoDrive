@@ -136,7 +136,7 @@ class DQNValidator:
         final_y = self.robot_y
 
         # Salva os dados no arquivo
-        with open("~/ros_ws/src/Qlearn-AutoDrive/Autodriver/q_learning_control/network/validation/validacao.txt", "a") as f:
+        with open("validacao.txt", "a") as f:
             if reached:
                 f.write(f"Episódio {episode_num}: {result_str} | Passos: {steps} | Tempo: {duration:.2f} s\n")
             else:
