@@ -63,7 +63,7 @@ roslaunch q_learning_control q_learning_sim.launch
 
 ---
 
-### ⚠️ Aviso: O repositório contem três treinamentos para três épsilons, dessa forma, afim de validar corretamente o treinamento, basta substituir o arquivo q_net.pth da pasta "network" pelo q_net.pth do respectivo resultado que deseja, ou seja, épsilon = 1 ou épsilon = 0.8 ou épsilon = 0.6 
+### ⚠️ Aviso: O repositório contem três treinamentos para três épsilons, dessa forma, afim de validar corretamente o treinamento, basta substituir o arquivo q_net.pth da pasta "network" pelo q_net.pth do respectivo resultado que deseja, ou seja, épsilon = 1  ou épsilon = 0.6 
 
 ### 🔴 Nota: Originalmente o arquivo network já contem o q_net.pth do épsilon = 1.0
 ---
