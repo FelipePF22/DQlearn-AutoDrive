@@ -206,7 +206,7 @@ include_directories(
 # catkin_add_nosetests(test)
 
 catkin_install_python(PROGRAMS
-  scripts/q_learning_node.py
+  scripts/q_learning_node_MLP.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
